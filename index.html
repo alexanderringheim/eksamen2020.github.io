@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voss Herad</title>
+    <link rel="icon" href="images/voss_skjold.png">
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="quiz_style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a href="images/voss_skjold.png"><img src="images/voss_skjold.png" height="100" width="90" alt="Herasskjoldet"></a>
+        <h1>Voss Herad</h1>
+        <section id='nav'>
+            <h3 id="nav-menu">Meny</h3>
+            <img src="images/nav_icon.png" id='nav-icon-img' height='40' width='40' alt="">
+        </section>
+    </header>
+
+    <article id="dropdown">
+        <a href="https://voss.herad.no/tenester/kultur-idrett-og-fritid/kultur"><b>Kultur</b></a>
+        <a href="https://voss.herad.no/tenester/kultur-idrett-og-fritid/idrett/"><b>Idrett</b></a>
+        <a href="https://voss.herad.no/tenester/kultur-idrett-og-fritid/friluftsliv/"><b>Friluftsliv</b></a>
+        <a href="https://voss.herad.no/tenester/barn-og-familie/"><b>Familie</b></a>
+        <a href="https://voss.herad.no/tenester/vatn-avlop-renovasjon-og-veg/"><b>Vatn og avløp</b></a>
+        <a href="https://voss.herad.no/tenester/naring-og-arbeidsliv/"><b>Næringsliv</b></a>
+    </article>
+
+    <img src="images/background.jpg" id="background-image">
+    <section id="welcome-sound-section"><audio id="welcome-sound" src="sound/welcome.m4a" controls></audio></section>
+    
+
+    <main>
+        <section class="text-container">
+            <h2>Velkommen til Voss Herad!</h2>
+            <p>
+                Velkommen skal du vera til vakre Voss Herad. Hjå oss finner du noko for alle og ein kvar,
+                og på våre nettsider finner du praktisk info for både fastbuande og gjennomreisande på jakt etter
+                gode opplevingar. Du finner her info om lokale tilbod, oppdatert info om kva som skjer, kontaktinformasjonen i heraden,
+                og til og med ein quiz om Voss, for deg som ynskjer testa kunnskapen din om Voss! Me talast på Voss!
+            </p>
+        </section>
+
+        <section class="three-section-lineup">
+            <section id="hobbies-section">
+                <a href="https://voss.herad.no/tenester/kultur-idrett-og-fritid/kultur/">
+                    <article class="hobbies" id="culture">
+                        <h2>Kultur</h2>
+                        <img src="images/arrow_white.png" class="arrow-image" alt="">
+                    </article>
+                </a>
+                <a href="https://voss.herad.no/tenester/kultur-idrett-og-fritid/idrett/">
+                    <article class="hobbies" id="sports">
+                        <h2>Idrett</h2>
+                        <img src="images/arrow_white.png" class="arrow-image" alt="">
+                    </article>
+                </a>
+                <a href="https://voss.herad.no/tenester/kultur-idrett-og-fritid/friluftsliv/" class="hobbies" id="outdoors">
+                    <article >
+                        <h2>Friluftsliv</h2>
+                        <img src="images/arrow_white.png" class="arrow-image" alt="">
+                    </article>
+                </a>
+            </section>
+
+            <section id="quiz-section">
+                <article id="play-quiz" onclick="start_quiz();">Ta quiz!</article>
+                <article id="scoreboard">
+                    <table id="scoreboard-table">
+                        
+                    </table>
+                </article>
+            </section>
+
+            <section id="info-section">
+                <a href="https://voss.herad.no/tenester/barn-og-familie/">
+                    <article class="hobbies">
+                        <h2>Familie</h2>
+                        <img src="images/arrow_white.png" class="arrow-image" alt="">
+                    </article>
+                </a>
+                <a href="https://voss.herad.no/tenester/vatn-avlop-renovasjon-og-veg/">
+                    <article class="hobbies">
+                        <h2>Vatn og avløp</h2>
+                        <img src="images/arrow_white.png" class="arrow-image" alt="">
+                    </article>
+                </a>
+                <a href="https://voss.herad.no/tenester/naring-og-arbeidsliv/">
+                    <article class="hobbies">
+                        <h2>Næringsliv</h2>
+                        <img src="images/arrow_white.png" class="arrow-image" alt="">
+                    </article>
+                </a>
+            </section>
+        </section>
+        <section>
+            <article style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <h2>Soloppgang og natur på Voss</h2>
+                <video src="video/nature_voss.MOV" width="200" height="200px" controls></video>
+            </article>
+        </section>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="scoreboard.js"></script>
+    <script src="quiz.js"></script>
+    <script src="navigation.js"></script>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
